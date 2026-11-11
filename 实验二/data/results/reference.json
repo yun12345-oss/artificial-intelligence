@@ -1,0 +1,712 @@
+{
+  "q1": {
+    "path": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "expansions": {
+      "zero": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "manhattan": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "bfs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ]
+    },
+    "key_open_queues": {
+      "0,1": [
+        [
+          [
+            1,
+            0
+          ],
+          1,
+          6,
+          7
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          2,
+          5,
+          7
+        ]
+      ],
+      "1,4": [
+        [
+          [
+            3,
+            2
+          ],
+          5,
+          2,
+          7
+        ],
+        [
+          [
+            2,
+            4
+          ],
+          6,
+          1,
+          7
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          6,
+          3,
+          9
+        ]
+      ],
+      "2,4": [
+        [
+          [
+            3,
+            4
+          ],
+          7,
+          0,
+          7
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          6,
+          3,
+          9
+        ],
+        [
+          [
+            4,
+            2
+          ],
+          6,
+          3,
+          9
+        ]
+      ]
+    }
+  },
+  "q2": {
+    "path": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "cost": 7,
+    "expansions": {
+      "corrected_manhattan": 10,
+      "corrected_bfs": 10,
+      "directed_landmark": 8
+    },
+    "heuristic_points": [
+      {
+        "case_id": "free_official",
+        "method": "corrected_manhattan",
+        "row": "0",
+        "col": "0",
+        "true_cost": "7",
+        "estimate": "7",
+        "error": "0"
+      },
+      {
+        "case_id": "free_official",
+        "method": "corrected_manhattan",
+        "row": "0",
+        "col": "1",
+        "true_cost": "8",
+        "estimate": "6",
+        "error": "2"
+      },
+      {
+        "case_id": "free_official",
+        "method": "corrected_manhattan",
+        "row": "1",
+        "col": "2",
+        "true_cost": "4",
+        "estimate": "4",
+        "error": "0"
+      },
+      {
+        "case_id": "free_official",
+        "method": "corrected_manhattan",
+        "row": "4",
+        "col": "3",
+        "true_cost": "0",
+        "estimate": "0",
+        "error": "0"
+      },
+      {
+        "case_id": "free_official",
+        "method": "corrected_manhattan",
+        "row": "4",
+        "col": "4",
+        "true_cost": "0",
+        "estimate": "0",
+        "error": "0"
+      },
+      {
+        "case_id": "free_official",
+        "method": "corrected_bfs",
+        "row": "0",
+        "col": "0",
+        "true_cost": "7",
+        "estimate": "7",
+        "error": "0"
+      },
+      {
+        "case_id": "free_official",
+        "method": "corrected_bfs",
+        "row": "0",
+        "col": "1",
+        "true_cost": "8",
+        "estimate": "6",
+        "error": "2"
+      },
+      {
+        "case_id": "free_official",
+        "method": "corrected_bfs",
+        "row": "1",
+        "col": "2",
+        "true_cost": "4",
+        "estimate": "4",
+        "error": "0"
+      },
+      {
+        "case_id": "free_official",
+        "method": "corrected_bfs",
+        "row": "4",
+        "col": "3",
+        "true_cost": "0",
+        "estimate": "0",
+        "error": "0"
+      },
+      {
+        "case_id": "free_official",
+        "method": "corrected_bfs",
+        "row": "4",
+        "col": "4",
+        "true_cost": "0",
+        "estimate": "0",
+        "error": "0"
+      },
+      {
+        "case_id": "free_official",
+        "method": "directed_landmark",
+        "row": "0",
+        "col": "0",
+        "true_cost": "7",
+        "estimate": "7",
+        "error": "0"
+      },
+      {
+        "case_id": "free_official",
+        "method": "directed_landmark",
+        "row": "0",
+        "col": "1",
+        "true_cost": "8",
+        "estimate": "8",
+        "error": "0"
+      },
+      {
+        "case_id": "free_official",
+        "method": "directed_landmark",
+        "row": "1",
+        "col": "2",
+        "true_cost": "4",
+        "estimate": "4",
+        "error": "0"
+      },
+      {
+        "case_id": "free_official",
+        "method": "directed_landmark",
+        "row": "4",
+        "col": "3",
+        "true_cost": "0",
+        "estimate": "0",
+        "error": "0"
+      },
+      {
+        "case_id": "free_official",
+        "method": "directed_landmark",
+        "row": "4",
+        "col": "4",
+        "true_cost": "0",
+        "estimate": "0",
+        "error": "0"
+      }
+    ]
+  },
+  "q3": {
+    "root_values": {
+      "tree_b2_d6_20261111": -8,
+      "tree_b2_d6_20261112": -5,
+      "tree_b2_d6_20261113": -11,
+      "tree_official": 5
+    },
+    "official_node_values": {
+      "root/0/0/0": 3,
+      "root/0/0/1": 5,
+      "root/0/0": 5,
+      "root/0/1/0": 6,
+      "root/0/1/1": 9,
+      "root/0/1": 9,
+      "root/0": 5,
+      "root/1/0/0": 6,
+      "root/1/0/1": 9,
+      "root/1/0": 9,
+      "root/1/1/0": 1,
+      "root/1/1/1": 2,
+      "root/1/1": 2,
+      "root/1": 2,
+      "root": 5
+    },
+    "official_leaves": {
+      "ideal": [
+        5,
+        3,
+        9,
+        2,
+        1
+      ],
+      "number": [
+        3,
+        5,
+        6,
+        6,
+        9,
+        1,
+        2
+      ],
+      "estimate": [
+        5,
+        3,
+        9,
+        2,
+        1
+      ],
+      "random": [
+        9,
+        6,
+        5,
+        3,
+        2,
+        1
+      ],
+      "ideal_reverse": [
+        6,
+        9,
+        1,
+        2,
+        6,
+        9,
+        3,
+        5
+      ]
+    },
+    "official_prunes": {
+      "ideal": [
+        [
+          "root/0/1",
+          [
+            0
+          ]
+        ],
+        [
+          "root/1",
+          [
+            0
+          ]
+        ]
+      ],
+      "number": [
+        [
+          "root/0/1",
+          [
+            1
+          ]
+        ]
+      ],
+      "estimate": [
+        [
+          "root/0/1",
+          [
+            0
+          ]
+        ],
+        [
+          "root/1",
+          [
+            0
+          ]
+        ]
+      ],
+      "random": [
+        [
+          "root/1",
+          [
+            0
+          ]
+        ]
+      ],
+      "ideal_reverse": []
+    }
+  },
+  "q4": {
+    "distance_matrix": [
+      [
+        0,
+        12,
+        10,
+        4,
+        8,
+        8
+      ],
+      [
+        12,
+        0,
+        8,
+        8,
+        4,
+        10
+      ],
+      [
+        10,
+        8,
+        0,
+        6,
+        6,
+        12
+      ],
+      [
+        4,
+        8,
+        6,
+        0,
+        6,
+        6
+      ],
+      [
+        8,
+        4,
+        6,
+        6,
+        0,
+        6
+      ],
+      [
+        8,
+        10,
+        12,
+        6,
+        6,
+        0
+      ]
+    ],
+    "depths": {
+      "2": {
+        "value": -1,
+        "actions": {
+          "0": -4,
+          "1": -1,
+          "2": -2,
+          "3": -4
+        },
+        "optimal": [
+          1
+        ],
+        "sequence": [
+          {
+            "turn": 1,
+            "player": 0,
+            "origin": 0,
+            "target": 1,
+            "cost": 4,
+            "gain": 2,
+            "score_a": 2,
+            "score_b": 0,
+            "U": 2
+          },
+          {
+            "turn": 2,
+            "player": 1,
+            "origin": 1,
+            "target": 2,
+            "cost": 4,
+            "gain": 3,
+            "score_a": 2,
+            "score_b": 3,
+            "U": -1
+          }
+        ]
+      },
+      "4": {
+        "value": 3,
+        "actions": {
+          "0": -5,
+          "1": 1,
+          "2": 3,
+          "3": -7
+        },
+        "optimal": [
+          2
+        ],
+        "sequence": [
+          {
+            "turn": 1,
+            "player": 0,
+            "origin": 0,
+            "target": 2,
+            "cost": 8,
+            "gain": -1,
+            "score_a": -1,
+            "score_b": 0,
+            "U": -1
+          },
+          {
+            "turn": 2,
+            "player": 1,
+            "origin": 1,
+            "target": 0,
+            "cost": 8,
+            "gain": 1,
+            "score_a": -1,
+            "score_b": 1,
+            "U": -2
+          },
+          {
+            "turn": 3,
+            "player": 0,
+            "origin": 4,
+            "target": 1,
+            "cost": 6,
+            "gain": 0,
+            "score_a": -1,
+            "score_b": 1,
+            "U": -2
+          },
+          {
+            "turn": 4,
+            "player": 1,
+            "origin": 2,
+            "target": 3,
+            "cost": 12,
+            "gain": -5,
+            "score_a": -1,
+            "score_b": -4,
+            "U": 3
+          }
+        ]
+      }
+    }
+  }
+}
